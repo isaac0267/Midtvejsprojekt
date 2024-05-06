@@ -1,0 +1,22 @@
+#gameContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.peg {
+    width: 100px;
+    height: 300px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.disk {
+    width: calc(50px + 20 * var(--size));
+    height: 20px;
+    background-color: blue;
+    margin: 2px 0;
+    --size: 1; /* Størrelsen varieres baseret på disken */
+}
